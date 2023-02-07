@@ -7,6 +7,9 @@ import (
 	"github.com/google/uuid"
 )
 
+type HTMLParserInterface interface {
+	Create(templateName string, data interface{}) (string, error)
+}
 type htmlStruct struct {
 	rootPath string
 }

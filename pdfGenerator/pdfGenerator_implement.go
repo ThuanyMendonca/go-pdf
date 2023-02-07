@@ -7,6 +7,10 @@ import (
 	"github.com/google/uuid"
 )
 
+type PDFGenetorInterface interface {
+	Create(htmlFile string) (string, error)
+}
+
 type wk struct {
 	rootPath string
 }
